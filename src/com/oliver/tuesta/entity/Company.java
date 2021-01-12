@@ -18,62 +18,60 @@ public class Company {
     private ArrayList<String> telephones;
     private String ceo;
 
-    public Company (){ }
+    public Company(String ruc) {
+        this.ruc = ruc;
+    }
 
     public String getRuc() {
         return ruc;
     }
 
-    public void setRuc(String ruc) {
-        this.ruc = ruc!=null? ruc : "Not found";
-    }
-
     public String getBusinessName() {
-        return businessName;
+        return businessName == null ? "not found" : businessName;
     }
 
     public void setBusinessName(String businessName) {
-        this.businessName = businessName!=null? businessName : "Not found";
+        this.businessName = businessName != null ? businessName : "Not found";
     }
 
     public String getWeb() {
-        return web;
+        return web == null ? "not found" : web;
     }
 
     public void setWeb(String web) {
-        this.web = web!=null? web : "Not found";
+        this.web = web;
     }
 
     public String getCompanyType() {
-        return companyType;
+        return companyType == null ? "not found" : companyType;
     }
 
     public void setCompanyType(String companyType) {
-        this.companyType = companyType!=null? companyType : "Not found";
+        this.companyType = companyType;
     }
 
     public String getCondition() {
-        return condition;
+        return condition == null ? "not found" : condition;
     }
 
     public void setCondition(String condition) {
-        this.condition = condition!=null? condition : "Not found";
+        this.condition = condition;
     }
 
     public String getStart() {
-        return start;
+        return start == null ? "not found" : start;
     }
 
     public void setStart(String start) {
-        this.start = start!=null? start : "Not found";
+        this.start = start;
     }
 
     public String getCiiu() {
-        return ciiu;
+        return ciiu == null ? "not found" : ciiu;
     }
 
     public String getActivities() {
-        return activities;
+        return activities == null ? "not found" : activities;
     }
 
     public void setActivities(String activities) {
@@ -81,31 +79,31 @@ public class Company {
     }
 
     public void setCiiu(String ciiu) {
-        this.ciiu = ciiu!=null? ciiu : "Not found";
+        this.ciiu = ciiu;
     }
 
     public String getAddress() {
-        return address;
+        return address == null ? "not found" : address;
     }
 
     public void setAddress(String address) {
-        this.address = address!=null? address : "Not found";
+        this.address = address;
     }
 
     public String getCity() {
-        return city;
+        return city == null ? "not found" : city;
     }
 
     public void setCity(String city) {
-        this.city = city!=null? city : "Not found";
+        this.city = city;
     }
 
     public String getDepartment() {
-        return department;
+        return department == null ? "not found" : department;
     }
 
     public void setDepartment(String department) {
-        this.department = department!=null? department : "Not found";
+        this.department = department;
     }
 
     public ArrayList<String> getTelephones() {
@@ -117,10 +115,10 @@ public class Company {
     }
 
     public String getCeo() {
-        return ceo;
+        return ceo == null ? "not found" : ceo;
     }
 
     public void setCeo(String ceo) {
-        this.ceo = ceo!=null? ceo : "Not found";
+        this.ceo = ceo;
     }
 }

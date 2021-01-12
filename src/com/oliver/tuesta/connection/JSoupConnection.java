@@ -13,10 +13,10 @@ public class JSoupConnection {
 
     private static final String URL = "https://www.universidadperu.com/empresas/busqueda/";
 
-    public void getData(final String ruc, Company company) {
+    public void getData(final Company company) {
 
         try {
-            final Document document = Jsoup.connect(URL + ruc).get();
+            final Document document = Jsoup.connect(URL + company.getRuc()).get();
 
             Elements elements = document.select("li.exp");
             ArrayList<String> phones = new ArrayList<>();
@@ -37,9 +37,6 @@ public class JSoupConnection {
                 data.select("strong").remove();
 
                 switch (element) {
-                    case "RUC:":
-                        company.setRuc(data.text());
-                        break;
                     case "Razón Social:":
                         company.setBusinessName(data.text());
                         break;

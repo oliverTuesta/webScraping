@@ -4,6 +4,12 @@
     <root id="archive" name="webScraping.jar">
       <element id="module-output" name="webScraping" />
       <element id="extracted-dir" path="$USER_HOME$/Downloads/jsoup-1.13.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/poi-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/poi-ooxml-4.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/lib/commons-collections4-4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/poi-4.1.2/lib/commons-compress-1.19.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
